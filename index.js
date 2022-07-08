@@ -1,9 +1,5 @@
-import dotenv from "dotenv";
-
 const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS]});
 import { MessageActionRow, MessageButton, MessageEmbed } from "discord.js";
-
-dotenv.config();
 
 const ticketGuild = await client.guilds.fetch("YOUR_SERVER_ID");
 
